@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores principais BMTH */
+  --color-bmth-black: #000000;
+  --color-bmth-dark: #1a1a1a;
+  --color-bmth-red: oklch(0.63 0.25 29);
+  /* Vermelho mais acessível */
+  --color-bmth-blue: oklch(0.55 0.12 248);
+  --color-bmth-light: oklch(0.96 0.02 140);
+  --color-bmth-accent: oklch(0.78 0.08 190);
+
+  /* Fontes */
+  --font-family-bmth-title: "Oswald", sans-serif;
+  --font-family-bmth-body: "Montserrat", sans-serif;
+
+  /* Espaçamentos */
+  --spacing-bmth-sm: 0.75rem;
+  --spacing-bmth-md: 1.25rem;
+  --spacing-bmth-lg: 2rem;
+
+  /* Bordas */
+  --border-width-bmth: 3px;
+  --border-radius-bmth: 0.5rem;
+}
+
+/* Aplicando o tema base */
+@layer base {
+  :root {
+    color-scheme: dark;
+    color: var(--color-bmth-light);
+    background-color: var(--color-bmth-dark);
+    font-family: var(--font-family-bmth-body);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-family-bmth-title);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
