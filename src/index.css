@@ -11,7 +11,7 @@
   --color-bmth-accent: oklch(0.78 0.08 190);
 
   /* Fontes */
-  --font-family-bmth-title: "Oswald", sans-serif;
+  --font-family-bmth-title: "Times New Roman", Baskerville, Georgia, serif;
   --font-family-bmth-body: "Montserrat", sans-serif;
 
   /* Espaçamentos */
@@ -45,3 +45,7 @@
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
