@@ -15,7 +15,7 @@ const NavLinks = () => {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                    `text-white font-family-bmth-title uppercase text-xl font-semibold transition-colors duration-300 ${isActive ? 'border-b-2 border-white' : ''} hover:text-gray-300`
+                    `mix-blend-difference text-white font-family-bmth-title tracking-widest uppercase text-xl font-semibold transition-colors duration-300 ${isActive ? 'border-b-2 border-white' : ''} hover:text-gray-300`
                 }
             >
                 {link.label}

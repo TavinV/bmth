@@ -3,6 +3,10 @@ import bmthBg from '../assets/bmth.mp4';
 import BMTHMetalLogo from '../assets/BMTH-METAL-LOGO.png';
 import HeroButton from '../Components/HeroButton';
 import Footer from '../Components/Footer';
+import thatsTheSpiritAlbumCover from '../assets/thats-the-spirit.png';
+import albuns from '../lib/Discografia';
+import MusicCard from '../Components/MusicCard';
+const thatsTheSpiritAlbum = albuns.find(album => album.nome === "That's the Spirit");
 
 function Home() {
   return (
@@ -52,8 +56,23 @@ function Home() {
           </div>
         </section>
 
-        {/* Seção adicional para conteúdo que fará o footer aparecer com scroll */}
-        <section className="h-4 bg-transparent"></section>
+        <section className="min-h-screen w-full text-black bg-white flex-col items-center justify-center py-16 px-4 sm:px-0">
+          <h1 className='text-center text-8xl'>That's the Spirit</h1>
+          <h2 className='text-center text-2xl'>2015</h2>
+          <div className="flex w-full flex-wrap justify-center items-center gap-1 mt-16">
+            {
+              thatsTheSpiritAlbum.musicas.map((musica, index) => (
+                <MusicCard
+                  key={index}
+                  nome={musica.nome}
+                  duracao={musica.duracao}
+                  spotify={musica.spotify}
+                  albumCover={thatsTheSpiritAlbumCover}
+                />
+              ))
+            }
+          </div>
+        </section>
       </main>
 
       {/* Footer que só aparece com scroll */}
