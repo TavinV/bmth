@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const HeroSection = ({ backgroundVideo, logo, subtitle, buttons }) => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative">
+    <section className="min-h-screen w-screen flex items-center justify-center relative">
       {/* Vídeo de fundo */}
       <div className="fixed top-0 left-0 w-full h-full -z-10">
         <video
@@ -18,7 +18,7 @@ const HeroSection = ({ backgroundVideo, logo, subtitle, buttons }) => {
       <div className="flex flex-col items-center justify-center px-4 sm:px-0">
         <img
           src={logo}
-          className="w-full max-w-md px-4 sm:max-w-xl md:max-w-2xl"
+          className="w-full max-w-md px-4 sm:max-w-xl md:max-w-2xl mix-blend-difference drop-shadow-bmth-light"
           alt="Bring Me The Horizon Logo"
         />
 

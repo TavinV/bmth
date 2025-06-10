@@ -22,6 +22,8 @@
   /* Bordas */
   --border-width-bmth: 3px;
   --border-radius-bmth: 0.5rem;
+
+  --bmth-glow: 10px 10px 221px 0px rgba(255, 255, 255, 0.75);
 }
 
 /* Aplicando o tema base */
@@ -48,6 +50,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body::after{
