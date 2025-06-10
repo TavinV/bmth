@@ -1,7 +1,7 @@
-import HeroSection from '../components/HeroSection';
-import AlbumSection from '../components/AlbumSection';
-import MainLayout from '../components/MainLayout';
-import HeroButton from '../components/HeroButton';
+import HeroSection from '../Components/HeroSection';
+import AlbumSection from '../Components/AlbumSection';
+import MainLayout from '../Components/MainLayout';
+import HeroButton from '../Components/HeroButton';
 
 import bmthBg from '../assets/bmth.mp4';
 import BMTHMetalLogo from '../assets/BMTH-METAL-LOGO.png';
