@@ -33,14 +33,11 @@ const Nav = () => {
 
     return (
         <>
-            <nav className='hidden md:flex justify-end items-center gap-12 p-4 w-1/3'>
-                <NavLinks />
-            </nav >
-            <div className='md:hidden flex items-center justify-center'>
+            <div className='flex items-center justify-center'>
                 <button onClick={toggleNavBar}> {isOpen ? <X /> : <Menu />} </button>
             </div>
             {isOpen && (
-                <div className='flex flex-col items-center basis-full'>
+                <div className='flex flex-col items-end absolute right-0 p-4 top-16 mt-auto basis-full'>
                     < NavLinks />
                 </div>
             )}
