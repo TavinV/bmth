@@ -14,8 +14,8 @@ const NavLinks = () => {
             <NavLink
                 key={link.to}
                 to={link.to}
-                className={({ isActive }) =>
-                    `mix-blend-difference text-white font-family-bmth-title tracking-widest uppercase text-xl font-semibold transition-colors duration-300 ${isActive ? 'border-b-2 border-white' : ''} hover:text-gray-300`
+                className={() =>
+                    `mix-blend-difference text-white font-family-bmth-title tracking-wide uppercase text-xl font-semibold transition-colors duration-300 drop-shadow-2xl hover:scale-101`
                 }
             >
                 {link.label}
@@ -26,6 +26,7 @@ const NavLinks = () => {
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false)
+    
     const toggleNavBar = () => {
         setIsOpen(!isOpen)
     }

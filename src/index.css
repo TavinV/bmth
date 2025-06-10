@@ -49,3 +49,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body::after{
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('./assets/nnnoise.svg');
+  z-index: 10000;
+  opacity: 65%;
+  pointer-events: none;
+}
